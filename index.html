@@ -26,6 +26,7 @@
 
     <!-- alpine js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- app -->
     <script src="src/app.js" async></script>
@@ -140,10 +141,9 @@
         <main class="content">
             <h1>Mari Belanja & Berlangganan di <span>Anyu.Net</span></h1>
 
-            <p>Selamat datang di Anyu.net! Kami menyediakan perangkat jaringan berkualitas tinggi dan layanan pemasangan
+            <p>Selamat datang di Anyu.net!</p>
+            <p> Kami menyediakan perangkat jaringan berkualitas tinggi dan layanan pemasangan
                 Wi-Fi profesional untuk kebutuhan Anda.</p>
-
-            <!-- <a href="#" class="cta">Checkout Sekarang !!!</a> -->
         </main>
     </section>
     <!-- hero section end -->
@@ -306,7 +306,8 @@
 
     <section id=contact class="contact">
         <h2><span>Kontak </span>Kami</h2>
-        <p>Kami di Anyu.net selalu siap membantu Anda! Jika Anda memiliki pertanyaan atau memerlukan informasi lebih
+        <p>Kami di Anyu.net selalu siap membantu Anda!</p>
+        <p> Jika Anda memiliki pertanyaan atau memerlukan informasi lebih
             lanjut tentang produk dan layanan kami, jangan ragu untuk menghubungi kami. Tim kami akan dengan senang hati
             menjawab semua pertanyaan Anda dan memberikan bantuan yang Anda butuhkan.
         </p>
@@ -315,26 +316,27 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3861.357607492964!2d112.5237784109167!3d-7.445306589221567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjYnNDMuMyJTIDExMsKwMzEnMzQuNiJF!5e0!3m2!1sid!2sid!4v1724903994793!5m2!1sid!2sid"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-                <form action="" id="contactform">
-                    <div class="input-group">
-                        <i data-feather="user"></i>
-                        <input type="text" placeholder="nama" id="name" name="name" required>
-                    </div>
-                    <div class="input-group">
-                        <i data-feather="mail"></i>
-                        <input type="email" placeholder="email" id="email" name="email" required>
-                    </div>
-                    <div class="input-group">
-                        <i data-feather="phone"></i>
-                        <input type="tel" placeholder="nomer hp" id="phone" name="phone" required>
-                    </div>
-                    <div class="input-group">
-                        <i data-feather="map-pin"></i>
-                        <input type="text" placeholder="alamat" id="address" name="address" required>
-                    </div>
-                
-                    <button type="button" class="btn disabled" id="contactButton" disabled><i data-feather="send" class="send"></i> Kirim Pesan</button>
-                </form>                
+            <form action="" id="contactform">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="nama" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="email" placeholder="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="tel" placeholder="nomer hp" id="phone" name="phone" required>
+                </div>
+                <div class="input-group">
+                    <i data-feather="map-pin"></i>
+                    <input type="text" placeholder="alamat" id="address" name="address" required>
+                </div>
+
+                <button type="button" class="btn disabled" id="contactButton" disabled><i data-feather="send"
+                        class="send"></i> Kirim Pesan</button>
+            </form>
         </div>
     </section>
     <!-- contact section end -->
