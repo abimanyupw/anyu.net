@@ -837,11 +837,15 @@ footer .credits a {
   }
   .about .row .content p {
     font-size: 1.5rem;
+  }  
+  .menu p {
+    font-size: 1.5rem;
   }
 
-  .menu p {
-    font-size: 1.2rem;
-  }
+  .products p {
+  max-width: 70%;
+  font-size: 1.5rem;
+}
   .contact .row {
     flex-wrap: wrap;
   }
