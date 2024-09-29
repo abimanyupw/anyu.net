@@ -202,11 +202,13 @@ const formatmessage = (obj) => {
     Email: ${obj.email}
     No HP: ${obj.phone}
     Alamat: ${obj.address}
+    
 Data Pesanan
     ${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`)}
-TOTAL : ${rupiah(obj.total)} 
-Terima Kasih.`;
+    TOTAL : ${rupiah(obj.total)} 
+    Terima Kasih.`;
 };
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const contactbtn = document.querySelector('#contactButton');
@@ -251,15 +253,3 @@ document.addEventListener('DOMContentLoaded', () => {
         return `Data Customer\nNama: ${obj.name}\nEmail: ${obj.email}\nNo HP: ${obj.phone}\nAlamat: ${obj.address}\nPesan:...\n\nTerima kasih telah menghubungi kami! Kami akan segera merespons pesan Anda.`;
     };
 });
-
-
-
-// konversi rupiah
-
-const rupiah = (number) => {
-    return new Intl.NumberFormat('id-ID', {
-        style: 'currency',
-        currency: 'IDR',
-        minimumFractionDigits: 0,
-    }).format(number);
-};
